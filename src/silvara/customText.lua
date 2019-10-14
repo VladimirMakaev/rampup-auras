@@ -1,4 +1,4 @@
-function()
+function onEachFrame()
     
     soundfile="Interface\\AddOns\\WeakAuras\\Media\\Sounds\\BananaPeelSlip.ogg"
     channel="Master"
