@@ -1,0 +1,29 @@
+{
+  "name": "rampup-auras",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "ts-node ./src/build.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VladimirMakaev/rampup-auras.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VladimirMakaev/rampup-auras/issues"
+  },
+  "homepage": "https://github.com/VladimirMakaev/rampup-auras#readme",
+  "devDependencies": {
+    "@types/lodash": "^4.14.144",
+    "@types/node": "^12.7.12",
+    "lodash": "^4.17.15",
+    "map-values-deep-lodash": "^1.0.2",
+    "ts-node": "^8.4.1",
+    "typescript": "^3.6.4"
+  },
+  "dependencies": {}
+}

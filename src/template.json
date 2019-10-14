@@ -1,0 +1,367 @@
+{
+    "m": "d",
+    "s": "2.13.4",
+    "d": {
+      "yOffset": 0,
+      "borderSize": 16,
+      "id": "My Ramps (Eternal Palace)",
+      "backdropColor": [
+        1,
+        1,
+        1,
+        0.5
+      ],
+      "regionType": "group",
+      "animation": {
+        "main": {
+          "type": "none",
+          "duration_type": "seconds"
+        },
+        "start": {
+          "type": "none",
+          "duration_type": "seconds"
+        },
+        "finish": {
+          "type": "none",
+          "duration_type": "seconds"
+        }
+      },
+      "selfPoint": "BOTTOMLEFT",
+      "anchorPoint": "CENTER",
+      "borderOffset": 5,
+      "internalVersion": 16,
+      "load": {
+        "size": {
+          "multi": []
+        },
+        "spec": {
+          "multi": []
+        },
+        "use_class": false,
+        "class": {
+          "multi": []
+        }
+      },
+      "frameStrata": 1,
+      "conditions": [],
+      "xOffset": 0,
+      "borderColor": [
+        1,
+        1,
+        1,
+        0.5
+      ],
+      "borderEdge": "None",
+      "borderInset": 11,
+      "uid": "WhE9patB2EQ",
+      "anchorFrameType": "SCREEN",
+      "authorOptions": [],
+      "borderBackdrop": "Blizzard Tooltip",
+      "triggers": [
+        {
+          "untrigger": [],
+          "trigger": {
+            "spellIds": [],
+            "names": [],
+            "unit": "player",
+            "event": "Health",
+            "debuffType": "HELPFUL",
+            "subeventSuffix": "_CAST_START",
+            "subeventPrefix": "SPELL",
+            "type": "aura2"
+          }
+        }
+      ],
+      "border": false,
+      "scale": 1,
+      "actions": {
+        "init": [],
+        "start": [],
+        "finish": []
+      },
+      "config": [],
+      "url": "https://wago.io/7JOA2XpJW/3",
+      "version": 3,
+      "semver": "1.0.2"
+    },
+    "v": 1421,
+    "c": [
+      {
+        "yOffset": 77.000549316406,
+        "outline": "OUTLINE",
+        "version": 3,
+        "color": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "wordWrap": "WordWrap",
+        "conditions": [],
+        "customTextUpdate": "update",
+        "internalVersion": 16,
+        "animation": {
+          "main": {
+            "type": "none",
+            "duration_type": "seconds"
+          },
+          "start": {
+            "type": "none",
+            "duration_type": "seconds"
+          },
+          "finish": {
+            "type": "none",
+            "duration_type": "seconds"
+          }
+        },
+        "url": "https://wago.io/7JOA2XpJW/3",
+        "selfPoint": "BOTTOM",
+        "anchorPoint": "CENTER",
+        "justify": "LEFT",
+        "uid": "icLaliNXx6o",
+        "config": [],
+        "id": "Silvara",
+        "anchorFrameType": "SCREEN",
+        "frameStrata": 1,
+        "displayText": "%c",
+        "fixedWidth": 200,
+        "xOffset": -24,
+        "customText": "%silvara/customText.lua%",
+        "load": {
+          "difficulty": {
+            "single": "mythic",
+            "multi": {
+              "mythic": true
+            }
+          },
+          "use_zoneId": false,
+          "use_combat": true,
+          "use_spec": true,
+          "use_encounterid": true,
+          "spec": {
+            "single": 1,
+            "multi": []
+          },
+          "role": {
+            "single": "HEALER",
+            "multi": {
+              "HEALER": true
+            }
+          },
+          "size": {
+            "multi": []
+          },
+          "zoneId": "1161",
+          "class": {
+            "multi": []
+          },
+          "encounterid": "2298"
+        },
+        "regionType": "text",
+        "semver": "1.0.2",
+        "authorMode": true,
+        "automaticWidth": "Auto",
+        "triggers": {
+          "1": {
+            "untrigger": {
+              "eventtype": "PLAYER_REGEN_DISABLED",
+              "use_sourceUnit": false
+            },
+            "trigger": {
+              "use_absorbMode": true,
+              "destUnit": "player",
+              "use_unit": true,
+              "custom_type": "event",
+              "use_destName": false,
+              "use_destUnit": false,
+              "unit": "player",
+              "spellName": "Shadow Mend",
+              "spellIds": [],
+              "use_eventtype": true,
+              "event": "Combat Events",
+              "subeventPrefix": "SPELL",
+              "use_extraSpellName": false,
+              "use_destFlags": false,
+              "eventtype": "PLAYER_REGEN_DISABLED",
+              "debuffType": "HELPFUL",
+              "realSpellName": "Shadow Mend",
+              "auraType": "DEBUFF",
+              "use_incombat": true,
+              "names": [],
+              "extraSpellName": "Arcane Barrage",
+              "use_auraType": true,
+              "use_spellName": true,
+              "sourceUnit": "player",
+              "useName": true,
+              "duration": "1000",
+              "unevent": "timed",
+              "auranames": [
+                "Power Word: Shield"
+              ],
+              "use_sourceUnit": false,
+              "destFlags": "InGroup",
+              "custom_hide": "custom",
+              "type": "event",
+              "subeventSuffix": "_AURA_BROKEN_SPELL",
+              "events": "UNIT_SPELLCAST_INTERRUPTED, UNIT_SPELLCAST_SUCCEEDED",
+              "use_sourceFlags": false
+            }
+          },
+          "activeTriggerMode": -10
+        },
+        "authorOptions": [],
+        "font": "Arial Narrow",
+        "actions": {
+          "init": {
+            "custom": "aura_env.timer = 0",
+            "do_custom": false
+          },
+          "start": {
+            "custom": "aura_env.timer = GetTime()\n\n\n\n\n",
+            "do_custom": true
+          },
+          "finish": []
+        },
+        "fontSize": 69
+      },
+      {
+        "yOffset": 77.000549316406,
+        "outline": "OUTLINE",
+        "version": 3,
+        "color": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "fixedWidth": 200,
+        "xOffset": -24,
+        "customTextUpdate": "update",
+        "internalVersion": 16,
+        "animation": {
+          "main": {
+            "type": "none",
+            "duration_type": "seconds"
+          },
+          "start": {
+            "type": "none",
+            "duration_type": "seconds"
+          },
+          "finish": {
+            "type": "none",
+            "duration_type": "seconds"
+          }
+        },
+        "automaticWidth": "Auto",
+        "selfPoint": "BOTTOM",
+        "anchorPoint": "CENTER",
+        "url": "https://wago.io/7JOA2XpJW/3",
+        "uid": "eSahXtT935B",
+        "justify": "LEFT",
+        "config": [],
+        "authorOptions": [],
+        "frameStrata": 1,
+        "displayText": "%c",
+        "anchorFrameType": "SCREEN",
+        "conditions": [],
+        "customText": "function()\n    \n    soundfile=\"Interface\\\\AddOns\\\\WeakAuras\\\\Media\\\\Sounds\\\\BananaPeelSlip.ogg\"\n    channel=\"Master\"\n    \n    cooldowns = {\n        {time = 5, text = \"Rapture Ramp\", sound = soundfile},\n        {time = 60, text = \"~30 seconds till Dread\", sound = soundfile},\n        {time = 80, text = \"Essence Ramp\", sound = soundfile},\n        {time = 120, text = \"Rapture Ramp + Eva\", sound = soundfile},\n        {time = 160, text = \"~20sec to 3rd Dread\", sound = soundfile}\n    }\n    \n    tval=ceil(GetTime() - aura_env.timer)\n    \n    for i=1, table.getn(cooldowns) do\n        if cooldowns[i].time == tval\n        then\n            if not aura_env.soundPlayed\n            then\n                \n                PlaySoundFile(cooldowns[i].sound, channel)\n                aura_env.soundPlayed=true\n            end\n            \n            return cooldowns[i].text\n        end        \n    end    \nend\n\n\n\n",
+        "id": "Za'qul",
+        "wordWrap": "WordWrap",
+        "semver": "1.0.2",
+        "authorMode": true,
+        "regionType": "text",
+        "triggers": {
+          "1": {
+            "untrigger": {
+              "eventtype": "PLAYER_REGEN_DISABLED",
+              "use_sourceUnit": false
+            },
+            "trigger": {
+              "use_absorbMode": true,
+              "destUnit": "player",
+              "use_sourceFlags": false,
+              "custom_type": "event",
+              "use_destName": false,
+              "use_destUnit": false,
+              "unit": "player",
+              "spellName": "Shadow Mend",
+              "spellIds": [],
+              "use_eventtype": true,
+              "event": "Combat Events",
+              "subeventPrefix": "SPELL",
+              "use_extraSpellName": false,
+              "use_destFlags": false,
+              "eventtype": "PLAYER_REGEN_DISABLED",
+              "debuffType": "HELPFUL",
+              "realSpellName": "Shadow Mend",
+              "auraType": "DEBUFF",
+              "events": "UNIT_SPELLCAST_INTERRUPTED, UNIT_SPELLCAST_SUCCEEDED",
+              "names": [],
+              "extraSpellName": "Arcane Barrage",
+              "use_auraType": true,
+              "use_spellName": true,
+              "sourceUnit": "player",
+              "destFlags": "InGroup",
+              "use_unit": true,
+              "unevent": "timed",
+              "auranames": [
+                "Power Word: Shield"
+              ],
+              "use_sourceUnit": false,
+              "useName": true,
+              "duration": "1000",
+              "type": "event",
+              "subeventSuffix": "_AURA_BROKEN_SPELL",
+              "custom_hide": "custom",
+              "use_incombat": true
+            }
+          },
+          "activeTriggerMode": -10
+        },
+        "load": {
+          "difficulty": {
+            "single": "mythic",
+            "multi": {
+              "mythic": true
+            }
+          },
+          "use_zoneId": false,
+          "use_combat": true,
+          "use_spec": true,
+          "class": {
+            "multi": []
+          },
+          "spec": {
+            "single": 1,
+            "multi": []
+          },
+          "role": {
+            "single": "HEALER",
+            "multi": {
+              "HEALER": true
+            }
+          },
+          "size": {
+            "multi": []
+          },
+          "zoneId": "1161",
+          "use_encounterid": true,
+          "encounterid": "2293"
+        },
+        "font": "Arial Narrow",
+        "actions": {
+          "init": {
+            "custom": "aura_env.timer = 0",
+            "do_custom": false
+          },
+          "start": {
+            "custom": "aura_env.timer = GetTime()\n\n\n\n\n",
+            "do_custom": true
+          },
+          "finish": []
+        },
+        "fontSize": 69
+      }
+    ],
+    "wagoID": "7JOA2XpJW"
+  }
